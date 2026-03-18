@@ -1,0 +1,39 @@
+---
+// Placeholder form – no backend. Pete can connect to a service later.
+---
+<section class="bg-black text-white py-12 px-6" aria-labelledby="newsletter-heading">
+  <div class="max-w-content mx-auto">
+    <h2 id="newsletter-heading" class="font-heading text-2xl md:text-3xl uppercase mb-2 text-white">
+      Join the newsletter
+    </h2>
+    <p class="font-body text-white/80 mb-6 max-w-xl">
+      [PLACEHOLDER: Short line about why to subscribe — e.g. "Get weekly insights and updates delivered to your inbox."]
+    </p>
+    <form
+      class="flex flex-col sm:flex-row gap-3 max-w-md"
+      action="#"
+      method="post"
+      aria-label="Newsletter signup"
+    >
+      <label for="newsletter-email" class="sr-only">Email address</label>
+      <input
+        id="newsletter-email"
+        type="email"
+        name="email"
+        required
+        placeholder="you@example.com"
+        class="flex-1 min-w-0 px-4 py-3 font-body text-black bg-white border-2 border-white focus:border-accent focus:outline-none placeholder:text-black/50"
+        autocomplete="email"
+      />
+      <button
+        type="submit"
+        class="px-6 py-3 font-heading font-bold uppercase bg-accent text-white border-2 border-accent hover:bg-white hover:text-accent transition-colors shrink-0"
+      >
+        Subscribe
+      </button>
+    </form>
+    <p class="font-body text-sm text-white/60 mt-3">
+      [PLACEHOLDER: Privacy note — e.g. "No spam. Unsubscribe anytime."]
+    </p>
+  </div>
+</section>

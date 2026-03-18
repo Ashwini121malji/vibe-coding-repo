@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+
+// PLACEHOLDER: Replace with real project data
+const projects = [
+  { title: 'Project One', description: '[PLACEHOLDER: Short description of the first project. Replace with real copy.]', href: '#' },
+  { title: 'Project Two', description: '[PLACEHOLDER: Short description of the second project. Replace with real copy.]', href: '#' },
+  { title: 'Project Three', description: '[PLACEHOLDER: Short description of the third project. Replace with real copy.]', href: '#' },
+];
+---
+<Layout title="Projects | Pete McPherson" description="[PLACEHOLDER: Meta description for Projects — e.g. Explore Pete McPherson's current and past projects.]">
+  <div class="max-w-content mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+    <h1 class="font-heading text-4xl md:text-5xl uppercase mb-4">
+      Projects
+    </h1>
+    <p class="font-body text-lg text-black/80 max-w-xl mb-12">
+      [PLACEHOLDER: Intro line for the projects page — e.g. "Here's what I'm building and what I've shipped."]
+    </p>
+    <ul class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" role="list">
+      {projects.map((project) => (
+        <li>
+          <ProjectCard title={project.title} description={project.description} href={project.href} />
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <NewsletterForm />
+</Layout>
